@@ -1,0 +1,241 @@
+body {
+  background-color: #EEBAA2;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  background-color: #230112;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+}
+@media screen and (min-width: 415px) {
+  .header {
+    flex-direction: row;
+  }
+}
+.header__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__bird {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+.header__nav ul {
+  display: flex;
+  margin-top: 20px;
+}
+@media screen and (min-width: 415px) {
+  .header__nav ul {
+    margin-top: 0;
+  }
+}
+.header__nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header__nav ul li:last-child {
+  margin-left: 20px;
+}
+.header__link {
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.1s linear;
+}
+.header__link:hover {
+  color: #F2FBD0;
+}
+@media screen and (min-width: 560px) {
+  .header__link {
+    font-size: 20px;
+  }
+}
+.header__logo {
+  font-family: "Barlow Condensed";
+  font-weight: 500;
+  font-size: 30px;
+  margin-right: 60px;
+}
+
+.main {
+  padding: 50px 0;
+}
+.main__header {
+  font-family: "Roboto";
+  font-size: 32px;
+  text-align: center;
+  color: #750013;
+  margin-bottom: 30px;
+}
+.main__header span {
+  font-family: "Barlow Condensed";
+}
+.main__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__owl {
+  display: block;
+  width: 300px;
+  height: auto;
+  box-shadow: 10px 5px 5px #000;
+}
+.main__rules {
+  width: 30%;
+  margin-left: 50px;
+}
+.main__rules p {
+  color: #750013;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+}
+.main__rules p:last-child {
+  margin-top: 20px;
+}
+.main__text {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  color: #750013;
+}
+.main__piper {
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  color: #750013;
+}
+.main__video {
+  margin: 0 auto;
+  display: block;
+  width: 300px;
+  height: auto;
+}
+@media screen and (min-width: 465px) {
+  .main__video {
+    width: 426px;
+    height: 240px;
+  }
+}
+@media screen and (min-width: 684px) {
+  .main__video {
+    width: 640px;
+    height: 360px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .main__video {
+    width: 854px;
+    height: 480px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .main__video {
+    width: 1280px;
+    height: 720px;
+  }
+}
+.main__btn {
+  display: block;
+  text-align: center;
+  width: 300px;
+  margin: 30px auto 0;
+  border: none;
+  border-radius: 25px;
+  padding: 20px 0;
+  font-size: 24px;
+  font-family: "Roboto";
+  color: #750013;
+  background-color: #E66659;
+  transition: all 0.2s linear;
+}
+.main__btn:hover {
+  background-color: #C10516;
+}
+.main__btn:active {
+  background-color: #F2FBD0;
+}
+
+.footer {
+  background-color: #750013;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+@media screen and (min-width: 450px) {
+  .footer {
+    padding: 40px 80px;
+  }
+}
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__text {
+  width: 200px;
+}
+@media screen and (min-width: 630px) {
+  .footer__text {
+    width: 100%;
+  }
+}
+.footer__line {
+  font-family: "Roboto";
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer__line:last-child {
+  margin-top: 20px;
+}
+.footer__github {
+  text-decoration: underline;
+  color: #fff;
+  transition: all 0.1s linear;
+}
+.footer__github:hover {
+  color: #F2FBD0;
+}
+.footer__link img {
+  display: block;
+  width: 100px;
+  height: 50px;
+  transform: scale(1);
+  transition: all 0.1s linear;
+}
+.footer__link img:hover {
+  transform: scale(1.1);
+}
+@media screen and (min-width: 630px) {
+  .footer__link img {
+    width: 200px;
+    height: 100px;
+  }
+}
+.footer__year {
+  font-family: "Roboto";
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

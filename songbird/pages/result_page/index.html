@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Songbird</title>
+    <link rel="icon" href="../../assets/img/bird-icon.png">
+    <link rel="stylesheet" href="../../assets/styles/style.css">
+    <link rel="stylesheet" href="../result_page/style/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__title">
+            <img src="../../assets/img/bird_icon.png" alt="Птичка" class="header__bird">
+            <a href="../start_page/index.html" class="header__logo header__link">SongBird</a>
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li>
+                    <a href="../start_page/index.html" class="header__link">Главная</a>
+                </li>
+                <li>
+                    <a href="../quiz_page/index.html" class="header__link">Викторина</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="main__block win main__block--invisible">
+            <h2 class="main__header">
+                Поздравляем!
+            </h2>
+            <p class="main__result">
+                Ваш результат:
+                <span id="winScore"></span>
+            </p>
+            <p class="main__text">
+                Вы набрали максимальное количество баллов за игру
+            </p>
+            <img src="../../assets/img/win.gif" alt="Птичка" class="win__gif">
+        </div>
+
+        <div class="main__block not-win main__block--invisible">
+            <h2 class="main__header">
+                Отличная игра!
+            </h2>
+            <p class="main__result">
+                Ваш результат:
+                <span id="notWinScore"></span>
+            </p>
+            <p class="main__text">
+                Хотите сыграть еще раз?
+            </p>
+            <div class="not-win__controls">
+                <a class="not-win__btn" href="../quiz_page/index.html">
+                    Играть
+                </a>
+                <a class="not-win__btn" href="../start_page/index.html">
+                    На главную
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="../result_page/script.js"></script>
+</body>
+</html>

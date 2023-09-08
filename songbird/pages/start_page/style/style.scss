@@ -1,0 +1,268 @@
+@import '../../../assets/styles/vars.scss';
+
+body {
+    background-color: $peach-color
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: $dark-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+
+    @media screen and (min-width: 415px) {
+        flex-direction: row;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__bird {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    &__nav ul {
+        display: flex;
+        margin-top: 20px;
+
+        @media screen and (min-width: 415px) {
+            margin-top: 0;
+        }
+
+        & li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            &:last-child {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__link {
+        font-family: 'Roboto';
+        font-size: 14px;
+        color: $white-color;
+
+        transition: all .1s linear;
+
+        &:hover {
+            color: $light-yellow-color;
+        }
+
+        @media screen and (min-width: 560px) {
+            font-size: 20px;
+        }
+    }
+
+    &__logo {
+        font-family: 'Barlow Condensed';
+        font-weight: 500;
+        font-size: 30px;
+        margin-right: 60px;
+    }
+}
+
+.main {
+    padding: 50px 0;
+
+    &__header {
+        font-family: 'Roboto';
+        font-size: 32px;
+        text-align: center;
+        color: $dark-red-color;
+
+        margin-bottom: 30px;
+
+        & span {
+            font-family: 'Barlow Condensed';
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__owl {
+        display: block;
+        width: 300px;
+        height: auto;
+        box-shadow: 10px 5px 5px #000;
+    }
+
+    &__rules {
+        width: 30%;
+        margin-left: 50px;
+
+        p {
+            color: $dark-red-color;
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: 500;
+
+            &:last-child {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &__text {
+        margin-top: 50px;
+        text-align: center;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        color: $dark-red-color;
+    }
+
+    &__piper {
+        margin-bottom: 40px;
+        text-align: center;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 24px;
+        color: $dark-red-color;
+    }
+
+    &__video {
+        margin: 0 auto;
+        display: block;
+        width: 300px;
+        height: auto;
+
+        @media screen and (min-width: 465px) {
+            width: 426px;
+            height: 240px;
+        }
+
+        @media screen and (min-width: 684px) {
+            width: 640px;
+            height: 360px;
+        }
+
+        @media screen and (min-width: 900px) {
+            width: 854px;
+            height: 480px;   
+        }
+
+        @media screen and (min-width: 1350px) {
+            width: 1280px;
+            height: 720px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        text-align: center;
+        width: 300px;
+        margin: 30px auto 0;
+        border: none;
+        border-radius: 25px;
+        padding: 20px 0;
+
+        font-size: 24px;
+        font-family: 'Roboto';
+        color: $dark-red-color;
+        background-color: $light-red-color;
+
+        transition: all .2s linear;
+
+        &:hover {
+            background-color: $red-color;
+        }
+
+        &:active {
+            background-color: $light-yellow-color;
+        }
+    }
+}
+
+.footer {
+    background-color: $dark-red-color;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+    @media screen and (min-width: 450px) {
+        padding: 40px 80px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__text {
+        width: 200px;
+
+        @media screen and (min-width: 630px) {
+            width: 100%;
+        }
+    }
+
+    &__line {
+        font-family: 'Roboto';
+        color: $white-color;
+        font-size: 14px;
+        font-weight: 400;
+
+        &:last-child {
+            margin-top: 20px;
+        }
+    }
+
+    &__github {
+        text-decoration: underline;
+        color: $white-color;
+        transition: all .1s linear;
+
+        &:hover {
+            color: $light-yellow-color;
+        }
+    }
+
+    &__link {
+        
+        & img {
+            display: block;
+            width: 100px;
+            height: 50px;
+            transform: scale(1);
+            transition: all .1s linear;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            @media screen and (min-width: 630px) {
+                width: 200px;
+                height: 100px;
+            }
+        }
+    }
+
+    &__year {
+        font-family: 'Roboto';
+        font-weight: 600;
+        color: $white-color;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}

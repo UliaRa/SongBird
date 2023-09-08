@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Songbird</title>
+    <link rel="icon" href="../../assets/img/bird-icon.png">
+    <link rel="stylesheet" href="../../assets/styles/style.css">
+    <link rel="stylesheet" href="../quiz_page/style/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__info">
+            <div class="header__title">
+                <img src="../../assets/img/bird_icon.png" alt="Птичка" class="header__bird">
+                <a href="../start_page/index.html" class="header__logo header__link">SongBird</a>
+            </div>
+            <p class="header__score">Счет: <span id="scoreCount">0</span></p>
+        </div>
+        <div>
+            <ul class="header__menu">
+                <li class="header__level header__level--chosen">
+                    Разминка
+                </li>
+                <li class="header__level">
+                    Воробьиные
+                </li>
+                <li class="header__level">
+                    Лесные птицы
+                </li>
+                <li class="header__level">
+                    Певчие птицы
+                </li>
+                <li class="header__level">
+                    Хищные птицы
+                </li>
+                <li class="header__level">
+                    Морские птицы
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <button class="main__next main__next--disabled">Следующий</button>
+
+        <section class="main__quiz quiz">
+            <div class="quiz__answer bird">
+                <img class="bird__img" src="../../assets/img/default_bird.png" alt="Птица">
+                <p class="bird__name">***</p>
+                <div class="bird__player player">
+                    <audio preload="metadata" id="birdAudio"></audio>
+                    <div class="player__seekbar">
+                        <button class="player__play" id="btnPlayBird">
+                            <img id="playBirdImg" src="../../assets/img/play_btn.png" alt="Кнопка Play">
+                        </button>
+                        <div class="player__timeline">
+                            <input id="birdTimeline" type="range" value="0" min="0" class="player__line player__progress">
+                            <div class="player__times">
+                                <span id="currentTime"><span id="birdMinutes">00</span>:<span id="birdSeconds">00</span></span>
+                                <p id="finishTime"><span id="birdMinutesAll"></span>:<span id="birdSecondsAll"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player__volume-controls">
+                        <img class="player__volume-img" src="../../assets/img/volume_img.png" alt="Громкость">
+                        <input id="birdVolume" type="range" class="player__volume player__progress" min="0" max="10" step="1" value="10">
+                    </div>
+                </div>
+            </div>
+            <div class="quiz__questions">
+                <div class="options">
+                    <ul class="options__list"></ul>
+                </div>
+            </div>
+        </section>
+        <section class="main__description answer">
+            <div class="answer__data answer__data--invisible">
+                <div class="answer__main answer__main--invisible">
+                    <img class="answer__img" src="../../assets/img/default_bird.png" alt="Птица">
+                    <div class="answer__info">
+                        <p class="answer__name">Название</p>
+                        <p class="answer__latin">Name</p>
+                        <div class="player">
+                            <audio preload="metadata" id="answerAudio"></audio>
+                            <div class="player__seekbar">
+                                <button class="player__play" id="btnPlayAnswer">
+                                    <img id="playAnswerImg" src="../../assets/img/play_btn.png" alt="Кнопка Play">
+                                </button>
+                                <div class="player__timeline">
+                                    <input type="range" value="0" min="0" step="1" id="answerTimeline" class="player__line player__progress">
+                                    <div class="player__times">
+                                        <span id="currentTime"><span id="answerMinutes">00</span>:<span id="answerSeconds">00</span></span>
+                                        <p id="finishTime"><span id="answerMinutesAll"></span>:<span id="answerSecondsAll"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player__volume-controls">
+                                <img class="player__volume-img" src="../../assets/img/volume_img.png" alt="Громкость">
+                                <input id="answerVolume" type="range" class="player__volume player__progress" min="0" max="10" step="1" value="10">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="answer__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eos enim veritatis corporis ut sequi natus distinctio aperiam officia deserunt tempora, nostrum, illum vero nesciunt excepturi quaerat officiis tempore animi.
+                </p>
+            </div>
+            <p class="answer__default">
+                Выберите один из вариантов ответа
+            </p>
+        </section>
+    </main>
+
+    <script type="module" src="../../assets/birds.js"></script>
+    <script type="module" src="../quiz_page/script.js"></script>
+</body>
+</html>
